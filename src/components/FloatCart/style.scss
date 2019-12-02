@@ -282,3 +282,30 @@
   height: 100%;
   overflow-y: scroll;
 }
+
+div[data-sku="10686354557628304"] .shelf-item__buy-btn:last-of-type { 
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    text-decoration-line: line-through;
+    color: #666666;
+    &:hover {
+      border: 1px solid #eee;
+        background-color: red;
+        width: 100%;
+      }
+}
+
+div[data-sku="10686354557628304"].shelf-item {
+  &:hover {
+    background-color: red;
+    .shelf-item__buy-btn:last-of-type{
+      background-color: #cccccc;
+      display: none;
+
+    }
+  }
+}
+
+div[data-sku="10686354557628304"] .shelf-item__price {
+    text-decoration-line: line-through;
+}

@@ -36,6 +36,9 @@ const Product = ({ product, addProduct }) => {
       {product.isFreeShipping && (
         <div className="shelf-stopper">Free shipping</div>
       )}
+      {product.isOutOfStock && (
+        <div className="shelf-stopper">Out Of Stock</div>
+      )}
       <Thumb
         classes="shelf-item__thumb"
         src={require(`../../../../static/products/${product.sku}_1.jpg`)}
@@ -50,7 +53,7 @@ const Product = ({ product, addProduct }) => {
         </div>
         {productInstallment}
       </div>
-      <div className="shelf-item__buy-btn">Add to cart</div>
+      <button className="shelf-item__buy-btn">Add to cart</button>
     </div>
   );
 };

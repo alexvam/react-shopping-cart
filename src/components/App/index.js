@@ -2,12 +2,13 @@ import React from 'react';
 
 import Shelf from '../Shelf';
 import Filter from '../Shelf/Filter';
-import GithubCorner from '../github/Corner';
 import FloatCart from '../FloatCart';
+import Logo  from'../../static/products/gs.PNG';
 
 const App = () => (
   <React.Fragment>
-    <GithubCorner />
+    <img src = {Logo} alt ={"Golden Shoe Logo"}></img>  {/* < !-- Logo  --> */}
+    
     <main>
       <Filter />
       <Shelf />

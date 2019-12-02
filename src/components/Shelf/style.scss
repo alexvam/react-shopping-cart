@@ -44,11 +44,15 @@
     border: 1px solid transparent;
     cursor: pointer;
 
+    &.shelf-item__buy-btn{
+      width: 100%!important;
+    }
     &:hover {
       border: 1px solid #eee;
 
       .shelf-item__buy-btn {
         background-color: #eabf00;
+        width: 100%;
       }
     }
 
